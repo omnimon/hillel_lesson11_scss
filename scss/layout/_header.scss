@@ -1,0 +1,29 @@
+.header {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  background: $bg-main;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 42px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-title;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &--active {
+      color: $color-accent;
+      font-weight: 500;
+    }
+  }
+}

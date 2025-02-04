@@ -1,0 +1,11 @@
+.btn {
+  background: $color-accent;
+  color: $color-contrast;
+  max-width: 225px;
+  padding: 20px 40px;
+}
+
+.btn:hover {
+  background: $color-contrast;
+  color: $color-accent;
+}

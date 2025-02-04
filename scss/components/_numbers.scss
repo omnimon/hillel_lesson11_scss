@@ -1,0 +1,49 @@
+.numbers {
+  background: $color-accent;
+  padding: 102px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    max-width: 540px;
+    width: 100%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .numbers__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .numbers__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .numbers__list {
+    grid-template-columns: 1fr;
+  }
+}
